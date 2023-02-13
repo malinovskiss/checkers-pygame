@@ -37,7 +37,7 @@ class check:
 	def get_moves(self): # return the possible moves of the checkers piece, checks if the positions diagonal by one are free and returns them in a list 
 		l = [] 
 		if (self.pos[0]+self.player>=0 and self.pos[0]+self.player<8): 
-			if self.pos[1]+1<8 : 
+			if self.pos[1]+1<8 :
 				if self.board.is_clear(self.pos[0]+self.player,self.pos[1]+1):
 					l.append([self.pos[0]+self.player,self.pos[1]+1])
 			if self.pos[1]-1>=0 : 
