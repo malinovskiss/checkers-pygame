@@ -298,7 +298,7 @@ for case in bb.case_list:
 	l.append([case,[50*(case.pos[0]+1)+7,50*(case.pos[1]+1)+7]])
 	
 # The pygame loop
-while continuer == 0:
+while continuer == 0: 
 	for event in pygame.event.get():
 		if event.type == QUIT:
 			continuer = 1
