@@ -345,4 +345,4 @@ while continuer == 0:
 			case_click = None
 			check_sound.play()
 	show_board()
-	pygame.display.flip()
+	pygame.display.flip() 
