@@ -2,7 +2,7 @@
 def board_index(board,pos):
 		for i in range(0,len(board)):
 			if board[i].pos == pos:
-				return [i,board[i].player] 
+				return [i,board[i].player]  
 		return [13,0]
 class board:
 	def __init__(self): # create a list of check objects according to the rules of english draughts
