@@ -11,7 +11,7 @@ class board:
 			for j in range(0,8):
 				if (i+j)%2 == 1: # (i+j)%2==1 means a black case on the board
 					if i<3 : # at start of game all black pieces are on this side 
-						self.case_list.append(check(1,0,[i,j],self)) # 12 pieces for player 1 
+						self.case_list.append(check(1,0,[i,j],self)) # 12 pieces for player 1  
 					elif i>4 :
 						self.case_list.append(check(-1,0,[i,j],self)) # 12 pieces for player 2, i used 1 and -1 as the ID of the players to make coding x-axis movements easier
 	def is_clear(self,pos1,pos2): # This function tells us if a position on the board (ex: 1,2) is clear. 
